@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="far.css">
+    <title>Centimeter to length</title>
+</head>
+<body>
+<div id="center">
+    <div class="content">
+    <h3>CM to Length</h3>
+    <input type="text" placeholder="Enter a CM" id="input"><br>
+    <div>
+    <button type="submit" onclick="convert()">Convert</button>
+    </div>
+    <div id="result">
+
+    </div>
+    </div>
+</div>
+<script>
+    function convert(){
+    const variable=Number(document.getElementById("input").value);
+    const inchval=variable/2.54;
+    let result=document.getElementById("result");
+    result.innerHTML = inchval.toFixed(2) +  " inches";
+    }
+</script>
+</body>
+</html>    
